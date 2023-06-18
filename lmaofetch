@@ -194,8 +194,6 @@ get_de_wm() {
 	echo "${wm:-unknown}"
 }
 
-
-echo "               "
 echo -e "${c1}󰌽 os${c3}     $(get_distro_name) $(uname -m)"
 echo -e "${c2}󰌢 kernel${c3} $(uname -r)"
 echo -e "${c7}󰏓 pkgs${c3}   $(get_package_info)"
@@ -208,8 +206,5 @@ if [ -n "$DISPLAY" ]; then
 	echo -e "${c2}󰇄 de/wm${c3}  $(get_de_wm)"
 fi
 echo -e "${c6}󰥔 up${c3}    $(get_uptime)"
-
-echo -e "               "
-echo -e "${c6}󰮯  ${c6}${c2}󰊠  ${c2}${c4}󰊠  ${c4}${c5}󰊠  ${c5}${c7}󰊠  ${c7}"
 
 echo -e "               \033[0m"
