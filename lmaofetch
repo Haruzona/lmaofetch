@@ -135,10 +135,6 @@ get_distro_name() {
 		awk -F '=' '/PRETTY_NAME/ { print $2 }' /etc/os-release
 }
 
-get_storage_info() {
-	df -h --output=used,size / | awk 'NR == 2 { print $1" / "$2 }'
-}
-
 get_cpu(){
 cpu_all="$(cat /proc/cpuinfo | grep 'model name' | cut -d ':' -f2 | cut -b 2-)"
 cpu_All="$(sed 's/ /;/g' <<< $cpu_all)"
@@ -201,7 +197,6 @@ echo -e "${c4} shell${c3}  ${SHELL##*/}"
 echo -e " cpu  $cpu_name"
 echo -e " gpu  $gpu_name"
 echo -e "${c6}󰍛 ram${c3}    $(get_mem)"
-echo -e "${c7}󰍛 disk${c3}   $(get_storage_info)"
 if [ -n "$DISPLAY" ]; then
 	echo -e "${c2}󰇄 de/wm${c3}  $(get_de_wm)"
 fi
