@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 magenta="\033[1;35m"
 green="\033[1;32m"
@@ -142,7 +142,7 @@ cpu_name=""
 
 for n in $cpu_All; do
     if test -z "$cpu_name"; then
-      cpu_name=$(echo $n | sed 's/;/ /g' | sed 's/Intel//g' | sed 's/(R)//g' | sed 's/(TM)//g' | sed 's/Core//g' | sed 's/CPU//g' | sed 's/       //g' | sed 's/Gen//g' | sed '(tm)//g')
+      cpu_name=$(echo $n | sed 's/;/ /g' | sed 's/Intel//g' | sed 's/(R)//g' | sed 's/(TM)//g' | sed 's/Core//g' | sed 's/CPU//g' | sed 's/       //g' | sed 's/Gen//g' | sed 's/(tm)//g' | sed 's/(r)//g' | sed 's/Processor//g' | sed 's/Dual-Core//g' | sed 's/Quad-Core//g' | sed 's/Six-Core//g' | sed 's/Eight-Core//g' | sed 's/[1-9][0-9]-Core//g' | sed 's/[0-9]-Core//g' | sed 's/* Compute Cores//g' | sed 's/AuthenticAMD//g' | sed 's/with Radeon * Graphics//g' | sed 's/ altivec supported//g' | sed 's/FPU*//g' | sed 's/Chip Revision*//g' | sed 's/Technologies, Inc//g')
     fi
     i=$((i + 1))
 done
@@ -153,7 +153,7 @@ get_gpu() {
 gpu_name="$(lspci | grep -i  'vga\|3d\|2d')"
 gpu_id="$(echo $gpu_name | cut -d ' ' -f1)"
 gpu_name="$(echo $gpu_name | sed s/$gpu_id//g | cut -d ':' -f2 | cut -b 2- | cut -d '(' -f 1)"
-gpu_name="$(echo $gpu_name | sed s/Intel//g | sed s/Corporation//g | sed s/Integrated//g | sed s/Graphics//g | sed s/Controller//g)"
+gpu_name="$(echo $gpu_name | sed 's/Intel//g' | sed 's/Corporation//g' | sed 's/Integrated//g' | sed 's/Graphics//g' | sed 's/Controller//g' | sed 's/AMD//g' | sed 's/ATI//g' | sed 's/Advanced Micro Devices, Inc.//g' | sed 's/GPU//g)"
 }
 get_gpu
 
