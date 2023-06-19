@@ -142,7 +142,7 @@ cpu_name=""
 
 for n in $cpu_All; do
     if test -z "$cpu_name"; then
-      cpu_name=$(echo $n | sed 's/;/ /g' | sed 's/Intel//g' | sed 's/(R)//g' | sed 's/(TM)//g' | sed 's/Core//g' | sed 's/CPU//g' | sed 's/       //g' | sed 's/Gen//g')
+      cpu_name=$(echo $n | sed 's/;/ /g' | sed 's/Intel//g' | sed 's/(R)//g' | sed 's/(TM)//g' | sed 's/Core//g' | sed 's/CPU//g' | sed 's/       //g' | sed 's/Gen//g' | sed '(tm)//g')
     fi
     i=$((i + 1))
 done
