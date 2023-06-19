@@ -6,7 +6,7 @@ Lmaofetch is a simple system fetch written in Bash
 # Installation
 - Install:
 ```
-git clone https://github.com/p3nguin-kun/lmaofetch && sudo cp ~/lmaofetch/lmaofetch /usr/local/bin/ && chmod +x lmaofetch
+git clone https://github.com/p3nguin-kun/lmaofetch && sudo cp ~/lmaofetch/lmaofetch /usr/local/bin/ && chmod +x usr/local/bin/lmaofetch
 ```
 
 - Run:
