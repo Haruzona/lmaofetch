@@ -132,7 +132,7 @@ get_package_info() {
 }
 
 get_distro_name() {
-		awk -F '=' '/PRETTY_NAME/ { print $2 }' /etc/os-release
+		awk -F '"' '/PRETTY_NAME/ { print $2 }' /etc/os-release
 }
 
 get_cpu(){
