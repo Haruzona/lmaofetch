@@ -16,7 +16,7 @@ yay -S lmaofetch
 
 - Install:
 ```
-git clone https://github.com/p3nguin-kun/lmaofetch && cd lmaofetch && sudo make install && cd
+git clone https://github.com/p3nguin-kun/lmaofetch && cd lmaofetch && sudo make DESTDIR="$pkgdir" install && cd
 ```
 
 - Run:
