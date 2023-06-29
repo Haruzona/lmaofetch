@@ -6,7 +6,6 @@ all:
 
 install:
 	@mkdir -p $(DESTDIR)$(PREFIX)/bin
-	@mkdir -p $(DESTDIR)$(MANDIR)/man1
 	@cp -p lmaofetch $(DESTDIR)$(PREFIX)/bin/lmaofetch
 	@chmod 755 $(DESTDIR)$(PREFIX)/bin/lmaofetch
 
