@@ -16,7 +16,7 @@ yay -S lmaofetch
 
 - Install:
 ```
-git clone https://codeberg.org/p3nguin-kun/lmaofetch && sudo cp ~/lmaofetch/lmaofetch /usr/bin/ && chmod +x usr/bin/lmaofetch
+git clone https://github.com/p3nguin-kun/lmaofetch && sudo cp ~/lmaofetch/lmaofetch /usr/bin/ && sudo chmod +x /usr/bin/lmaofetch
 ```
 
 - Run:
