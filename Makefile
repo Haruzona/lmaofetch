@@ -10,4 +10,4 @@ install:
 	@chmod 755 $(DESTDIR)$(PREFIX)/bin/lmaofetch
 
 uninstall:
-	@rm -rf $(DESTDIR)$(PREFIX)/bin/lmaofetch
+	@sudo rm -rf $(DESTDIR)$(PREFIX)/bin/lmaofetch
