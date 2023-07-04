@@ -7,7 +7,7 @@ Lmaofetch is a simple system fetch written in Bash.
 If you don't want to clone this repo or install lmaofetch, you can use curl.
 
 ```
-curl https://raw.githubusercontent.com/p3nguin-kun/lmaofetch/main/lmaofetch | bash
+curl -s https://raw.githubusercontent.com/p3nguin-kun/lmaofetch/main/lmaofetch | bash
 ```
 
 # Installation
