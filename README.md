@@ -1,5 +1,5 @@
 # Lmaofetch
-Lmaofetch is a simple system fetch written in Bash
+Lmaofetch is a simple system fetch written in Bash.
 
 ![img](https://i.imgur.com/hKGQgrq.png)
 
