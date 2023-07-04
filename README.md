@@ -1,7 +1,7 @@
 # Lmaofetch
 Lmaofetch is a simple system fetch written in Bash
 
-![Screenshot_2023-06-19_13-46-46](https://github.com/p3nguin-kun/lmaofetch/assets/123321507/699be207-de67-41de-8fd0-0b6af10780ea)
+![img](https://i.imgur.com/hKGQgrq.png)
 
 # Installation
 ## Arch Linux and Arch-based
@@ -16,7 +16,7 @@ yay -S lmaofetch
 
 - Install:
 ```
-git clone https://github.com/p3nguin-kun/lmaofetch && cd lmaofetch && sudo make DESTDIR="$pkgdir" install && cd
+git clone https://github.com/p3nguin-kun/lmaofetch && cd lmaofetch && make DESTDIR="$pkgdir" install && cd
 ```
 
 - Run:
