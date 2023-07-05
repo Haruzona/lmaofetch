@@ -1,32 +1,32 @@
-# Lmaofetch
-Lmaofetch is a simple system fetch written in Bash.
+# ***lmaofetch***
+lmaofetch is a simple system fetch written in bash.
 
 ![img](https://i.imgur.com/hKGQgrq.png)
 
-# Run with curl
-If you don't want to clone this repo or install lmaofetch, you can use curl.
+# ***run with curl***
+if you don't want to clone this repo or install lmaofetch, you can use curl.
 
 ```
 curl -s https://raw.githubusercontent.com/p3nguin-kun/lmaofetch/main/lmaofetch | bash
 ```
 
-# Installation
-## Arch Linux and Arch-based
-Lmaofetch is available on [AUR](https://aur.archlinux.org/packages/lmaofetch), you can install it via AUR helper like yay or paru
+# ***installation***
+## arch linux and arch-based
+lmaofetch is available on [aur](https://aur.archlinux.org/packages/lmaofetch), you can install it via ảur helper like yay or paru
 
 ```
 yay -S lmaofetch
 ```
 
-## Manually
-- Install [Nerd Fonts](https://www.nerdfonts.com/)
+## manually
+- install [nerd fonts](https://www.nerdfonts.com/)
 
-- Install:
+- install:
 ```
 git clone https://github.com/p3nguin-kun/lmaofetch && cd lmaofetch && make DESTDIR="$pkgdir" install && cd
 ```
 
-- Run:
+- run:
 ```
 lmaofetch
 ```
