@@ -48,13 +48,13 @@ c10=${bgwhite}
 
 
 print_info() {
-    info "${c1}󰌽 os${c3}" distro
+    info "${c1}󰌽 os ${c3}" distro
     info "${c2}󰌢 ver${c3}" kernel
-    info "${c7}󰥔 up${c3}" uptime
-    info "${c4}󰏓 pkgs${c3}" packages
-    info "${c6} sh${c3}" shell
-    info "${c1}󰇄 de${c3}" de
-    info "${c2}󰇄 wm${c3}" wm
+    info "${c7}󰥔 up ${c3}" uptime
+    info "${c4}󰏓 pkg${c3}" packages
+    info "${c6} sh ${c3}" shell
+    info "${c1}󰇄 de ${c3}" de
+    info "${c2}󰇄 wm ${c3}" wm
     info "${c7} cpu${c3}" cpu
     info "${c6} gpu${c3}" gpu
     info "${c1}󰍛 ram${c3}" memory
@@ -108,7 +108,7 @@ distro_shorthand="tiny"
 # Example:
 # on:  'Arch Linux x86_64'
 # off: 'Arch Linux'
-os_arch="on"
+os_arch="off"
 
 
 # Uptime
@@ -167,7 +167,7 @@ memory_unit="mib"
 # on:   '998 (pacman), 8 (flatpak), 4 (snap)'
 # tiny: '908 (pacman, flatpak, snap)'
 # off:  '908'
-package_managers="on"
+package_managers="off"
 
 
 # Shell
@@ -316,7 +316,7 @@ gpu_type="all"
 # Default: 'on'
 # Values:  'on', 'off'
 # Flag:    --de_version
-de_version="on"
+de_version="off"
 
 # Info Separator
 # Replace the default separator with the specified string.
@@ -327,7 +327,7 @@ de_version="on"
 # Example:
 # separator="->":   'Shell-> bash'
 # separator=" =":   'WM = dwm'
-separator=" •"
+separator=" -"
 
 # Misc Options
 
