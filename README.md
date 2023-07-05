@@ -1,7 +1,7 @@
 # ***lmaofetch***
 lmaofetch is a simple system fetch written in bash.
 
-![img](https://i.imgur.com/hKGQgrq.png)
+![Screenshot_2023-07-06_02-40-32](https://github.com/p3nguin-kun/lmaofetch/assets/123321507/0d698d61-389d-4267-8601-a815ba99a620)
 
 # ***run with curl***
 if you don't want to clone this repo or install lmaofetch, you can use curl.
