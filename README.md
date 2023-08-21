@@ -1,16 +1,16 @@
-# ***lmaofetch***
+# **lmaofetch**
 lmaofetch is a simple system fetch written in bash.
 
 ![Screenshot_2023-07-06_02-40-32](https://github.com/p3nguin-kun/lmaofetch/assets/123321507/0d698d61-389d-4267-8601-a815ba99a620)
 
-# ***run with curl***
+# **run with curl**
 if you don't want to clone this repo or install lmaofetch, you can use curl.
 
 ```
 curl -s https://raw.githubusercontent.com/p3nguin-kun/lmaofetch/main/lmaofetch | bash
 ```
 
-# ***installation***
+# **installation**
 ## arch linux and arch-based
 lmaofetch is available on [aur](https://aur.archlinux.org/packages/lmaofetch), you can install it via ảur helper like yay or paru
 
